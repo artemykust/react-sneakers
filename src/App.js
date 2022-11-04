@@ -1,6 +1,66 @@
 function App() {
   return (
     <div className="wrapper">
+      <div className="overlay">
+        <div className="drawer">
+          <h2>
+            Корзина 
+            <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+          </h2>
+          <div className="items">
+            <div className="cartItem">
+              <div style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }} className="cartItemImg"></div>
+              <div className="cartItemInfo">
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>₽12 999</b>
+              </div>
+              <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+            </div>
+            <div className="cartItem">
+              <div style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }} className="cartItemImg"></div>
+              <div className="cartItemInfo">
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>₽12 999</b>
+              </div>
+              <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+            </div>
+            <div className="cartItem">
+              <div style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }} className="cartItemImg"></div>
+              <div className="cartItemInfo">
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>₽12 999</b>
+              </div>
+              <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+            </div>
+            <div className="cartItem">
+              <div style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }} className="cartItemImg"></div>
+              <div className="cartItemInfo">
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>₽12 999</b>
+              </div>
+              <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+            </div>
+          </div>
+          <div className="cartTotalBlock">
+            <ul>
+              <li>
+                <span>Итого:</span>
+                <div></div>
+                <b>₽21 498</b>
+              </li>
+              <li>
+                <span>Налог 5%</span>
+                <div></div>
+                <b>₽1074</b>
+              </li>
+            </ul>
+            <button className="greenButton">
+              Оформить заказ
+              <img src="/img/arrow.svg" alt="Arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
       <header>
         <div className="headerLeft">
           <img width={40} height={40} src="/img/logo.png" alt=""/>
@@ -20,9 +80,18 @@ function App() {
         </ul>
       </header>
       <div className="content">
-        <h1>All Sneakers</h1>
+        <div className="content-header">
+          <h1>Все кроссовки</h1>
+          <div className="search-block">
+            <img src="/img/search.svg" alt="Search" />
+            <input type="text" placeholder="Что хотите найти?" />
+          </div>
+        </div>
         <div className="sneakers">
           <div className="card">
+            <div className="favorite">
+              <img src="/img/heart-unliked.svg" alt="Unliked" />
+            </div>
             <img width={133} height={112} src="/img/sneakers/1.jpg" alt="" />
             <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
             <div className="cardBottom">
